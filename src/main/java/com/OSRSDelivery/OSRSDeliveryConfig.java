@@ -1,11 +1,13 @@
-package com.example;
+package com.OSRSDelivery;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
+import java.awt.*;
+
 @ConfigGroup("example")
-public interface ExampleConfig extends Config
+public interface OSRSDeliveryConfig extends Config
 {
 	@ConfigItem(
 		keyName = "greeting",
@@ -16,4 +18,5 @@ public interface ExampleConfig extends Config
 	{
 		return "Hello";
 	}
+	default boolean LocationButton() {return true;}
 }
